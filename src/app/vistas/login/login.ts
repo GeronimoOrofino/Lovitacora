@@ -36,7 +36,7 @@ export class Login {
           console.log("estos son los datos del formulario: ", this.formulariogrupo.value);
         },
         error: (err) => {
-          console.log("algo salio mal al subir");
+          console.log("algo salio mal en subirFormulario");
         }
       });
     }
