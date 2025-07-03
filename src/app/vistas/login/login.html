@@ -1,0 +1,39 @@
+
+    <h1>login works2</h1>
+    <form [formGroup]= "formulariogrupo" (ngSubmit)="enviarFormulario ()">
+
+        <label>
+            nombre:
+            <input type="text" formControlName="nombre">
+        </label>
+
+        <label>
+            email:
+            <input type="email" formControlName="email">
+        </label>
+
+         <label>
+            tipo de relacion:
+            <select formControlName="tipo">
+                <option value="Poliamoroso">Poliamor</option>
+                <option value="Monogamia">Monogamia</option>
+            </select>
+        </label>
+
+        <label>
+            Estado civil:
+            <select formControlName="estado">
+                <option value="Casado">Casado</option>
+                <option value="Soltero">Soltero</option>
+                <option value="Divorciado">Divorciado</option>
+            </select>
+        </label>
+
+        <label>
+            Apodo:
+            <input type="text" formControlName="apodo">
+        </label>
+
+        <button type="submit">Suscribirse</button>
+
+    </form>
